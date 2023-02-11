@@ -5,12 +5,12 @@ def change_position_to_left(pos):
     pos-=1
     return pos
 def increment_value(pos):
-    tab[pos] += 1
+    tab[pos] = chr(ord(tab[pos])+1)
 def decrement_value(pos):
-    tab[pos]-=1
+    tab[pos] = chr(ord(tab[pos])-1)
 
 
-tab = [0,0,0,0,0,0,0,0,0,0]
+tab = ['0','0','0','0','0','0','0','0','0','0']
 actual_pos = 0
 while True:
     input_text = input('Write char')
