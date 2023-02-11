@@ -16,10 +16,12 @@ while True:
     input_text = input('Write char')
     if input_text == '>':
         actual_pos = change_positin_to_right(actual_pos)
+        tab.append('0')
         print(tab)
         print(actual_pos)
     elif input_text == '<':
         actual_pos = change_position_to_left(actual_pos)
+        tab.append('0')
         print(tab)
         print(actual_pos)
     elif input_text == '+':
